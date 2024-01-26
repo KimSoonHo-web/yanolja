@@ -1,0 +1,12 @@
+@media screen and (max-width: 47.9375em) {
+    .RecommendationChiplessSwipe_listWrapper__2E5at {
+        width:calc(100% - 4rem);
+        padding: 0;
+        grid-auto-rows: 0;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        overflow: hidden
+    }
+}
+
+/*# sourceMappingURL=31176adc5ba5d033c537.css.map*/

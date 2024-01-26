@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.MainMapper">
+	
+	
+	<!-- 테마 조회 -->
+	  <select id="themeSelected" resultType="com.example.demo.vo.ThemeVo">
+        SELECT theme_name
+        FROM theme
+        WHERE theme_id = #{themeId}
+    </select>
+
+	<!-- 내가 찜한 호텔 리스트 -->
+	<select id="wishListSelected"
+		resultType="com.example.demo.vo.WishListVo">
+		SELECT
+		l.LIKE_ID,
+		l.USER_NO,
+		l.ACCOMMODATION_NO,
+		l.LIKE_DATE,
+		a.NAME AS ACCOMMODATION_NAME,
+		a.DESCRIPTION AS ACCOMMODATION_DESCRIPTION,
+		a.TYPE AS ACCOMMODATION_TYPE,
+		a.RATING AS ACCOMMODATION_RATING,
+		ad.DESCRIPTION AS ADDRESS_DESCRIPTION,
+		ROUND(AVG((r.RATING1 + r.RATING2 + r.RATING3 + r.RATING4)/4), 1) AS AVG_RATING,
+		COUNT(DISTINCT r.REVIEW_NO) AS REVIEW_COUNT,
+		MIN(DISTINCT ro.PRICE) AS MIN_ROOM_PRICE,
+		DATE_FORMAT(MIN(ro.CHECK_IN_TIME), '%H:%i') AS CHECK_IN_TIME,
+		DATE_FORMAT(MAX(ro.CHECK_OUT_TIME), '%H:%i') AS CHECK_OUT_TIME,
+		b.BADGE1,
+		b.BADGE2,
+		b.BADGE3,
+		i.IMAGE_URL AS IMAGE_URL,
+		GROUP_CONCAT(DISTINCT ro.ROOM_OPTION ORDER BY ro.ROOM_OPTION ASC SEPARATOR ', ') AS
+		ROOM_OPTIONS
+		FROM
+		tb_likes l
+		JOIN
+		tb_accommodation a ON l.ACCOMMODATION_NO = a.ACCOMMODATION_NO
+		JOIN
+		tb_address ad ON a.ADDRESS_NO = ad.ADDRESS_NO
+		LEFT JOIN
+		tb_review r ON a.ACCOMMODATION_NO = r.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_room ro ON a.ACCOMMODATION_NO = ro.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_image i ON a.ACCOMMODATION_NO = i.ACCOMMODATION_NO AND i.ROOM_NO IS NULL
+		LEFT JOIN
+		tb_badge b ON a.ACCOMMODATION_NO = b.ACCOMMODATION_NO
+		WHERE
+		l.USER_NO = #{userNo}
+		GROUP BY
+		l.LIKE_ID,
+		a.ACCOMMODATION_NO,
+		a.NAME,
+		a.TYPE,
+		a.RATING,
+		ad.DESCRIPTION,
+		ro.CHECK_IN_TIME,
+		ro.CHECK_OUT_TIME,
+		b.BADGE1,
+		b.BADGE2,
+		b.BADGE3,
+		i.IMAGE_URL
+		ORDER BY
+		l.LIKE_DATE DESC,
+		AVG_RATING DESC,
+		MIN_ROOM_PRICE ASC;
+
+	</select>
+
+	<!-- 테마 조회 -->
+	<select id="getThemeNameById" parameterType="int"
+		resultType="string">
+		SELECT theme_name
+		FROM theme
+		WHERE theme_id = #{themeId}
+	</select>
+
+	<!-- 테마별 숙소 조회 -->
+	<!-- <select id="getAccommodationsByThemeName" parameterType="string" resultType="com.example.demo.vo.AccommodationVo"> 
+		SELECT * FROM tb_accommodation WHERE TYPE = #{themeName} </select> -->
+
+	<!-- 유저 최근 본 숙소 조회 -->
+	<select id="getRecentlyViewedForUser"
+		resultType="com.example.demo.vo.AccommodationVo">
+		WITH RankedImages AS (
+		SELECT
+		A.ACCOMMODATION_NO, A.NAME,
+		I.IMAGE_URL, RV.VIEWED_AT,
+		ROW_NUMBER() OVER(PARTITION BY
+		A.ACCOMMODATION_NO ORDER BY RV.VIEWED_AT DESC) AS
+		rn
+		FROM
+		tb_accommodation A
+		JOIN tb_recently_viewed RV ON A.ACCOMMODATION_NO =
+		RV.ACCOMMODATION_NO
+		LEFT JOIN tb_image I ON A.ACCOMMODATION_NO =
+		I.ACCOMMODATION_NO
+		WHERE RV.USER_NO = #{userNo}
+		),
+		ReviewStats AS (
+		SELECT
+		ACCOMMODATION_No,
+		ROUND(AVG((RATING1 + RATING2 + RATING3) / 3),
+		1) AS avg_rating,
+		COUNT(REVIEW_NO) AS review_count
+		FROM tb_review
+		GROUP
+		BY ACCOMMODATION_No
+		),
+		MinRoomPrice AS (
+		SELECT
+		ACCOMMODATION_No,
+		MIN(PRICE) AS min_price
+		FROM tb_room
+		GROUP BY ACCOMMODATION_No
+		)
+		SELECT
+		R.ACCOMMODATION_NO, R.NAME, R.IMAGE_URL, R.VIEWED_AT, RS.avg_rating,
+		RS.review_count,
+		M.min_price,
+		B.BADGE1, B.BADGE2, B.BADGE3
+		FROM
+		RankedImages R
+		LEFT JOIN ReviewStats RS ON R.ACCOMMODATION_NO =
+		RS.ACCOMMODATION_No
+		LEFT JOIN MinRoomPrice M ON R.ACCOMMODATION_NO =
+		M.ACCOMMODATION_No
+		LEFT JOIN tb_badge B ON R.ACCOMMODATION_NO =
+		B.ACCOMMODATION_No
+		WHERE R.rn = 1
+	</select>
+
+	<!-- 최근 본 숙소 정보를 추가하는 쿼리 -->
+	<insert id="addRecentlyViewed">
+		INSERT INTO tb_recently_viewed (USER_NO,
+		ACCOMMODATION_NO, VIEWED_AT)
+		VALUES (#{userNo}, #{hotelId}, NOW())
+		ON
+		DUPLICATE KEY UPDATE VIEWED_AT = NOW()
+	</insert>
+	<!-- 인기 숙소 죄회 -->
+	<select id="getTopRatedAccommodations"
+		resultType="com.example.demo.vo.AccommodationVo">
+		SELECT
+		A.ACCOMMODATION_NO,
+		A.NAME,
+		ROUND((AVG(R.RATING1) +
+		AVG(R.RATING2) + AVG(R.RATING3) + AVG(R.RATING4)) / 4, 1) AS
+		AVG_RATING,
+		COUNT(R.REVIEW_NO) AS REVIEW_COUNT,
+		I.IMAGE_URL AS imageUrl,
+		MIN(RO.PRICE) AS MIN_PRICE,
+		B.BADGE1,
+		B.BADGE2,
+		B.BADGE3
+		FROM
+		tb_accommodation A
+		JOIN
+		tb_review R ON A.ACCOMMODATION_NO =
+		R.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_image I ON A.ACCOMMODATION_NO =
+		I.ACCOMMODATION_NO AND I.ROOM_NO IS NULL
+		LEFT JOIN
+		tb_room RO ON
+		A.ACCOMMODATION_NO = RO.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_badge B ON
+		A.ACCOMMODATION_NO = B.ACCOMMODATION_No
+		GROUP BY
+		A.ACCOMMODATION_NO,
+		A.NAME, I.IMAGE_URL, B.BADGE1, B.BADGE2, B.BADGE3
+		ORDER BY
+		AVG_RATING
+		DESC, REVIEW_COUNT DESC;
+	</select>
+
+	<!-- 내가 선택 지역 저장 -->
+	<insert id="recordRegionSelection">
+		INSERT INTO recently_selected_regions (USER_NO,
+		REGION_NAME,SELECTED_AT)
+		VALUES (#{userNo}, #{regionName}, now() )
+	</insert>
+
+	<!-- 유저 번호로 내가 조회한 지역 리스트 중복 없이 최신순으로 조회 -->
+	<select id="localselected"
+		resultType="com.example.demo.vo.LocalVo">
+		SELECT
+		rsr.USER_NO,
+		rsr.REGION_NAME,
+		rsr.SELECTED_AT
+		FROM (
+		SELECT
+		USER_NO,
+		REGION_NAME,
+		MAX(SELECTED_AT) as SELECTED_AT
+		FROM
+		recently_selected_regions
+		WHERE USER_NO = #{userNo}
+		GROUP BY REGION_NAME
+		) as rsr
+		ORDER BY rsr.SELECTED_AT DESC
+	</select>
+	<!-- DB에 저장한 내가 선택한 지역 삭제 -->
+	<delete id="deleteSelectedRegion">
+		DELETE FROM recently_selected_regions
+		WHERE USER_NO =
+		#{userNo}
+		AND REGION_NAME = #{entireRegion}
+	</delete>
+
+	<!-- 지역별 숙소 리스트 -->
+	<select id="LocalHotelSearch"
+		resultType="com.example.demo.vo.LocalHotelVo">
+		SELECT
+		a.ACCOMMODATION_NO,
+		a.NAME AS ACCOMMODATION_NAME,
+		a.TYPE,
+		a.RATING AS ACCOMMODATION_RATING,
+		a.DESCRIPTION AS
+		ACCOMMODATION_DESCRIPTION,
+		b.COUNTRY,
+		b.CITY,
+		b.STREET_ADDRESS,
+		b.DONG,
+		b.DESCRIPTION AS ADDRESS_DESCRIPTION,
+		i.IMAGE_URL AS
+		ACCOMMODATION_IMAGE_URL,
+		i.DESCRIPTION AS IMAGE_DESCRIPTION,
+		ROUND(AVG((r.RATING1 + r.RATING2 + r.RATING3 + r.RATING4) / 4), 1) AS
+		AVERAGE_RATING,
+		COUNT(DISTINCT r.REVIEW_NO) AS TOTAL_REVIEWS,
+		MIN(room.PRICE) AS MIN_ROOM_PRICE,
+		DATE_FORMAT(MIN(room.CHECK_IN_TIME), '%H:%i') AS CHECK_IN_TIME,
+		DATE_FORMAT(MAX(room.CHECK_OUT_TIME), '%H:%i') AS CHECK_OUT_TIME,
+		GROUP_CONCAT(DISTINCT room.ROOM_OPTION ORDER BY room.ROOM_OPTION ASC
+		SEPARATOR ', ') AS
+		ROOM_OPTION,
+		bg.BADGE1,
+		bg.BADGE2,
+		bg.BADGE3
+		FROM
+		tb_accommodation a
+		JOIN
+		tb_address b ON a.ADDRESS_NO = b.ADDRESS_NO
+		LEFT
+		JOIN
+		tb_image i ON a.ACCOMMODATION_NO = i.ACCOMMODATION_NO AND
+		i.ROOM_NO IS NULL
+		LEFT JOIN
+		tb_review r ON a.ACCOMMODATION_NO =
+		r.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_room room ON a.ACCOMMODATION_NO =
+		room.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_badge bg ON a.ACCOMMODATION_NO =
+		bg.ACCOMMODATION_No
+		WHERE
+		b.CITY LIKE CONCAT('%', #{entireRegion}, '%')
+		OR
+		FIND_IN_SET(b.DONG, REPLACE(#{entireRegion}, '/', ','))
+		GROUP BY
+		a.ACCOMMODATION_NO,
+		a.NAME,
+		a.TYPE,
+		a.RATING,
+		a.DESCRIPTION,
+		b.COUNTRY,
+		b.CITY,
+		b.STREET_ADDRESS,
+		b.DONG,
+		b.DESCRIPTION,
+		i.IMAGE_URL,
+		i.DESCRIPTION,
+		bg.BADGE1,
+		bg.BADGE2,
+		bg.BADGE3
+		ORDER BY
+		MIN_ROOM_PRICE ASC,
+		AVERAGE_RATING DESC;
+
+	</select>
+
+
+
+	<!-- 호텔 상세 -->
+	<select id="getHotelDetail" parameterType="string"
+		resultType="com.example.demo.vo.AccommodationVo">
+		SELECT
+		a.*,
+		addr.COUNTRY,
+		addr.CITY,
+		addr.STREET_ADDRESS,
+		addr.DONG,
+		addr.DESCRIPTION as address_description,
+		(SELECT
+		GROUP_CONCAT(r.ROOM_NO) FROM tb_room r WHERE r.ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as room_ids,
+		(SELECT COUNT(r.ROOM_NO) FROM tb_room
+		r WHERE r.ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as total_rooms,
+		(SELECT GROUP_CONCAT(i.IMAGE_NO) FROM tb_image i WHERE
+		i.ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO AND i.ROOM_NO IS NULL) as
+		accommodation_image_ids,
+		(SELECT GROUP_CONCAT(DISTINCT i.IMAGE_URL)
+		FROM tb_image i WHERE
+		i.ACCOMMODATION_NO = a.ACCOMMODATION_NO AND
+		i.ROOM_NO IS NULL) as
+		imageUrl,
+		(SELECT GROUP_CONCAT(DISTINCT
+		i.IMAGE_URL) FROM tb_image i WHERE
+		i.ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO AND i.ROOM_NO IS NOT NULL) as
+		roomImageUrl,
+		(SELECT
+		GROUP_CONCAT(rv.REVIEW_NO) FROM tb_review rv WHERE
+		rv.ACCOMMODATION_NO
+		= a.ACCOMMODATION_NO) as review_ids,
+		(SELECT GROUP_CONCAT(c.COUPON_NO)
+		FROM tb_coupon c WHERE c.ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as
+		coupon_ids,
+		b.BADGE1,
+		b.BADGE2,
+		b.BADGE3,
+		(SELECT ROUND(AVG(RATING1), 1)
+		FROM tb_review WHERE ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as
+		avg_rating1,
+		(SELECT ROUND(AVG(RATING2), 1) FROM tb_review WHERE
+		ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as avg_rating2,
+		(SELECT
+		ROUND(AVG(RATING3), 1) FROM tb_review WHERE ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as avg_rating3,
+		(SELECT ROUND(AVG(RATING4), 1) FROM
+		tb_review WHERE ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as avg_rating4,
+		(SELECT ROUND((AVG(RATING1) + AVG(RATING2) + AVG(RATING3) +
+		AVG(RATING4)) /
+		4, 1) FROM tb_review WHERE ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as
+		avg_rating,
+		(SELECT COUNT(REVIEW_NO) FROM
+		tb_review WHERE ACCOMMODATION_NO =
+		a.ACCOMMODATION_NO) as review_count
+		FROM tb_accommodation a
+		JOIN
+		tb_address addr ON a.ADDRESS_NO =
+		addr.ADDRESS_NO
+		LEFT JOIN tb_badge b
+		ON a.ACCOMMODATION_NO =
+		b.ACCOMMODATION_No
+		WHERE a.ACCOMMODATION_NO =
+		#{hotelId}
+	</select>
+
+	<!-- 숙소 번호에 따른 리뷰 리스트 -->
+	<select id="getReviewsByAccommodationNoAndRoomName"
+		resultType="com.example.demo.vo.ReviewVo">
+		SELECT
+		r.REVIEW_NO, r.ACCOMMODATION_NO, r.ROOM_NO, r.USER_NO,
+		r.RATING1,
+		r.RATING2, r.RATING3, r.RATING4, r.REVIEW_COMMENT,
+		r.REVIEW_DATE,
+		(r.RATING1 + r.RATING2 + r.RATING3 + r.RATING4) / 4.0 AS
+		AVG_RATING,
+		room.ROOM_TYPE AS roomName,
+		user.USER_NAME AS userName,
+		GROUP_CONCAT(img.IMAGE_URL) AS reviewImages
+		FROM
+		tb_review r
+		JOIN
+		tb_room
+		room ON r.ROOM_NO = room.ROOM_NO
+		JOIN
+		tb_user user ON r.USER_NO =
+		user.USER_NO
+		LEFT JOIN
+		tb_review_images img ON r.REVIEW_NO =
+		img.REVIEW_NO
+		WHERE
+		r.ACCOMMODATION_NO = #{accommodationNo}
+		<if test="roomName != null and roomName != '객실 전체'">
+			AND room.ROOM_TYPE = #{roomName}
+		</if>
+
+		GROUP BY
+		r.REVIEW_NO, r.ACCOMMODATION_NO, r.ROOM_NO, r.USER_NO,
+		r.RATING1,
+		r.RATING2, r.RATING3, r.RATING4, r.REVIEW_COMMENT,
+		r.REVIEW_DATE,
+		room.ROOM_TYPE, user.USER_NAME
+		ORDER BY
+		r.REVIEW_DATE
+		DESC;
+
+	</select>
+
+	<!-- 숙소별 안내/정책 -->
+	<select id="getHotelInfoById" parameterType="string"
+		resultType="com.example.demo.vo.AccommodationInfoVo">
+		SELECT DISTINCT * FROM tb_accommodation_info WHERE
+		ACCOMMODATION_No = #{hotelId}
+	</select>
+
+
+
+	<!-- 예약가능한 객실 목록 -->
+	<select id="selectAvailableRooms"
+		resultType="com.example.demo.vo.RoomVo">
+<![CDATA[
+	SELECT
+		r.ACCOMMODATION_NO,
+		r.ROOM_TYPE,
+		MIN(r.ROOM_NO) AS ROOM_NO,
+		(MIN(r.PRICE) * #{totalDays}) AS PRICE,
+		MIN(r.MAX_OCCUPANCY) AS maxOccupancy,
+		MIN(r.ROOM_COUNT) AS ROOM_COUNT,
+		MIN(i.IMAGE_URL) AS IMAGE_URL,
+		MIN(r.DESCRIPTION1) AS DESCRIPTION1,
+		MIN(r.DESCRIPTION2) AS DESCRIPTION2,
+		MIN(r.DESCRIPTION3) AS DESCRIPTION3,
+		DATE_FORMAT(MIN(r.CHECK_IN_TIME), '%H:%i') AS CHECK_IN_TIME,
+		DATE_FORMAT(MIN(r.CHECK_OUT_TIME), '%H:%i') AS CHECK_OUT_TIME
+	FROM
+		tb_room r
+		LEFT JOIN
+		tb_image i ON r.ACCOMMODATION_NO = i.ACCOMMODATION_NO
+	WHERE
+		r.ACCOMMODATION_NO = #{hotelId}
+		AND
+		r.MAX_OCCUPANCY >= #{totalPeople}
+		AND r.ROOM_COUNT > (
+			SELECT COUNT(*)
+			FROM tb_reservation res
+			WHERE res.ROOM_NO = r.ROOM_NO
+			AND (
+				(#{checkIn} BETWEEN res.CHECK_IN_DATE AND res.CHECK_OUT_DATE)
+				OR (#{checkOut} BETWEEN res.CHECK_IN_DATE AND res.CHECK_OUT_DATE)
+				OR (res.CHECK_IN_DATE BETWEEN #{checkIn} AND #{checkOut})
+			)
+		)
+	GROUP BY
+		r.ACCOMMODATION_NO,
+		r.ROOM_TYPE
+	ORDER BY
+		MIN(r.PRICE)
+]]>
+	</select>
+
+
+	<!-- 사용자 ID와 숙소 ID로 좋아요 ID를 조회하는 쿼리 -->
+	<select id="findLikeIdByUserIdAndAccommodationId"
+		resultType="Integer">
+		SELECT LIKE_ID
+		FROM tb_likes
+		WHERE USER_NO = #{userNo} AND
+		ACCOMMODATION_NO = #{accommodationNo}
+	</select>
+
+	<!-- 주어진 좋아요 ID를 사용하여 좋아요를 삭제하는 쿼리 -->
+	<delete id="deleteLikeById">
+		DELETE FROM tb_likes
+		WHERE LIKE_ID = #{likeId}
+	</delete>
+
+	<!-- 사용자 ID와 숙소 ID를 사용하여 좋아요를 추가하는 쿼리 -->
+	<insert id="insertLike">
+		INSERT INTO tb_likes(USER_NO, ACCOMMODATION_NO,
+		LIKE_DATE)
+		VALUES (#{userNo}, #{accommodationNo}, NOW())
+	</insert>
+
+	<!-- 객실상세 조회 -->
+	<select id="getRoomDetails"
+		resultType="com.example.demo.vo.RoomVo">
+		SELECT
+		R.ROOM_NO,
+		R.ACCOMMODATION_NO,
+		R.ROOM_TYPE,
+		R.ROOM_OPTION,
+		(R.PRICE * #{totalDays}) AS price,
+		R.DESCRIPTION1,
+		R.DESCRIPTION2,
+		R.DESCRIPTION3,
+		R.CHECK_IN_TIME,
+		R.CHECK_OUT_TIME,
+		R.MAX_OCCUPANCY,
+		R.ROOM_COUNT,
+		(R.ROOM_COUNT - (
+		SELECT COUNT(*)
+		FROM
+		tb_reservation RESERVATION
+		WHERE RESERVATION.CHECK_IN_DATE &lt;=
+		#{checkIn}
+		AND RESERVATION.CHECK_OUT_DATE >= #{checkOut}
+		AND
+		RESERVATION.ROOM_NO = R.ROOM_NO
+		)) AS roomCount ,
+		A.NAME AS
+		accommodation_name,
+		B.BADGE1,
+		B.BADGE2,
+		B.BADGE3
+		FROM tb_room R
+		JOIN
+		tb_accommodation A ON R.ACCOMMODATION_NO = A.ACCOMMODATION_NO
+		LEFT JOIN
+		tb_badge B ON R.ACCOMMODATION_NO = B.ACCOMMODATION_NO
+		WHERE
+		R.ROOM_NO =
+		#{roomNo}
+		AND R.ACCOMMODATION_NO = #{hotelId}
+		AND R.MAX_OCCUPANCY >=
+		#{totalPeople}
+		AND R.ROOM_COUNT > (
+		SELECT COUNT(*)
+		FROM tb_reservation
+		RESERVATION
+		WHERE RESERVATION.CHECK_IN_DATE &lt;= #{checkOut}
+		AND
+		RESERVATION.CHECK_OUT_DATE >= #{checkIn}
+		AND RESERVATION.ROOM_NO =
+		R.ROOM_NO
+		)
+	</select>
+	<!-- 객실 이미지 조회 -->
+	<select id="getRoomImages" resultType="string">
+		SELECT IMAGE_URL
+		FROM
+		tb_image
+		WHERE ROOM_NO = #{roomNo} AND ACCOMMODATION_NO = #{hotelId}
+	</select>
+
+</mapper>

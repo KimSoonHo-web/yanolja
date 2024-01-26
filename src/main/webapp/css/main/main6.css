@@ -1,0 +1,282 @@
+.YanoljaLiveItem_link__1C-Ac {
+    width: 14.8rem;
+    text-decoration: none
+}
+
+.YanoljaLiveItem_container__15S1y {
+    margin-right: 12px
+}
+
+.YanoljaLiveItem_preview__x7WA7 {
+    height: 19.8rem;
+    width: 14.8rem;
+    position: relative
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_wrapper__2vIV7 {
+    left: 0;
+    top: 0
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_image__wZavl {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity .3s ease-in-out
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_image__wZavl .YanoljaLiveItem_backgroundImage__11LmZ {
+    border-radius: 4px
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_video__3Med5 {
+    position: absolute;
+    left: 0;
+    right: 0
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_video__3Med5 video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 4px
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_playing__1QlbN {
+    opacity: 0
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF {
+    height: 19.8rem;
+    width: 14.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF .YanoljaLiveItem_previewTop__2WE5g {
+    display: -webkit-flex;
+    display: flex;
+    padding: 8px;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 4px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.32),transparent)
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF .YanoljaLiveItem_previewTop__2WE5g .YanoljaLiveItem_duration__YI7-E {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,.8)
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF .YanoljaLiveItem_previewBottom__x9GyK {
+    padding: 40px 8px 8px;
+    border-radius: 4px;
+    background-image: linear-gradient(180deg,transparent,#000)
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF .YanoljaLiveItem_previewBottom__x9GyK .YanoljaLiveItem_time__3JiXC {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.1rem
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF .YanoljaLiveItem_previewBottom__x9GyK .YanoljaLiveItem_category__2ZAOy {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 8px;
+    color: #f2f2f2
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_previewCover__3S6lF .YanoljaLiveItem_previewBottom__x9GyK .YanoljaLiveItem_title__2AK92 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: inherit;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY {
+    display: -webkit-flex;
+    display: flex
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_live__26pCW,.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_schedule__3AO5M,.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_viewer__1Zm1X,.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_vod__2KTao {
+    font-size: 10px;
+    line-height: 1.6rem;
+    font-weight: 800;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 2px
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_schedule__3AO5M,.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_viewer__1Zm1X,.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_vod__2KTao {
+    padding-left: 4px;
+    padding-right: 4px
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_live__26pCW {
+    width: 3.4rem;
+    height: 1.6rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_viewer__1Zm1X {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_schedule__3AO5M {
+    background-color: #fff;
+    color: #000
+}
+
+.YanoljaLiveItem_preview__x7WA7 .YanoljaLiveItem_badgeContainer__nUWwY .YanoljaLiveItem_text__3fZIk {
+    line-height: 1.6rem;
+    margin-left: 2px
+}
+
+.YanoljaLiveItem_anchor__2qhW7 {
+    color: inherit;
+    text-decoration: none;
+    box-sizing: content-box
+}
+
+.YanoljaLiveItem_product__e4utz {
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    color: #1a1a1a;
+    width: 14.8rem;
+    margin-top: 8px
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_leftSide__2jZYk {
+    display: inline-block;
+    border-radius: 4px;
+    width: 4.4rem;
+    height: 4.4rem
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-left: .6rem;
+    word-wrap: break-word;
+    max-width: 9.8rem
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_title__2AK92 {
+    font-weight: 400;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: inherit;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    max-height: 2.4rem
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_desc__aJl_r {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: right
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_desc__aJl_r .YanoljaLiveItem_primary__2bcmh {
+    color: #de2e5f
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_desc__aJl_r .YanoljaLiveItem_price__1cn_y {
+    margin-left: 2px
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_desc__aJl_r .YanoljaLiveItem_text__3fZIk {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #919191;
+    display: block
+}
+
+.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_desc__aJl_r .YanoljaLiveItem_currency__3mA6W,.YanoljaLiveItem_product__e4utz .YanoljaLiveItem_rightSide__1KQj7 .YanoljaLiveItem_desc__aJl_r .YanoljaLiveItem_ratio__wxdSI {
+    font-size: 1rem
+}
+
+.YanoljaLive_container__205oT {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    color: #2e2e2e
+}
+
+.YanoljaLive_container__205oT .YanoljaLive_header__2D8ja {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.YanoljaLive_container__205oT .YanoljaLive_header__2D8ja .YanoljaLive_headerGif__1hCfC {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2px
+}
+
+.YanoljaLive_container__205oT .swiper-button-next,.YanoljaLive_container__205oT .swiper-button-prev {
+    background-image: none;
+    top: 9rem
+}
+
+.YanoljaLive_container__205oT .YanoljaLive_swiper__3L5EX {
+    margin-right: -2rem;
+    margin-left: -2rem
+}
+
+@media screen and (max-width: 15.625em) {
+    .YanoljaLive_container__205oT .YanoljaLive_swiper__3L5EX {
+        margin-right:-1.5rem;
+        margin-left: -1.5rem
+    }
+}
+
+.YanoljaLive_container__205oT .YanoljaLive_swiper__3L5EX>div,.YanoljaLive_container__205oT .YanoljaLive_swiper__3L5EX>div>.swiper-container {
+    overflow: visible
+}
+
+/*# sourceMappingURL=52e716d8d983a6ae1dbe.css.map*/

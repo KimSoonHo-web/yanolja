@@ -1,0 +1,84 @@
+.PersonalBenefitBanner_container__WqNFT {
+    max-width: 76.8rem;
+    background-color: #f2f2f2;
+    padding: 2rem 0
+}
+
+@media screen and (max-width: 47.9375em) {
+    .PersonalBenefitBanner_container__WqNFT {
+        padding:2rem
+    }
+}
+
+.PersonalBenefitBanner_wrapper__3tQHl {
+    border: 1px solid #0152cc;
+    height: 8rem;
+    background-color: #fff;
+    padding: 0 2rem;
+    border-radius: .4rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    text-decoration: none
+}
+
+.PersonalBenefitBanner_image__ubVul {
+    width: 6rem;
+    height: 6rem;
+    margin-right: .4rem
+}
+
+.PersonalBenefitBanner_titleWrapper__20a-o {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-right: .4rem;
+    overflow: hidden
+}
+
+.PersonalBenefitBanner_title__2VAJ6 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media screen and (max-width: 20em) {
+    .PersonalBenefitBanner_title__2VAJ6 {
+        font-size:1rem
+    }
+}
+
+.PersonalBenefitBanner_subTitle___DUFW {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: .4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media screen and (max-width: 28.125em) {
+    .PersonalBenefitBanner_subTitle___DUFW {
+        font-size:1.4rem
+    }
+}
+
+@media screen and (max-width: 20em) {
+    .PersonalBenefitBanner_subTitle___DUFW {
+        font-size:1rem
+    }
+}
+
+.PersonalBenefitBanner_icon__1EF1w {
+    width: 2rem;
+    height: 2rem
+}
+
+.PersonalBenefitBanner_subTitle___DUFW>strong,.PersonalBenefitBanner_title__2VAJ6>strong {
+    font-weight: inherit;
+    background: linear-gradient(180deg,transparent 0,transparent 50%,rgba(1,82,204,.1) 0,rgba(1,82,204,.1))
+}
+
+/*# sourceMappingURL=27339fdb351ae07d8a9b.css.map*/

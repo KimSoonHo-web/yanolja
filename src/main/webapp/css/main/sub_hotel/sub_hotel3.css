@@ -1,0 +1,98 @@
+.OptimizedVerticalItem_container__3gK9y {
+    width: 14rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: unset;
+    text-decoration: none;
+    background: #fff
+}
+
+.OptimizedVerticalItem_body__1DHzY {
+    padding: 0 .4rem
+}
+
+.OptimizedVerticalItem_thumbnail__Uolri {
+    margin-bottom: .8rem;
+    max-width: unset!important
+}
+
+.OptimizedVerticalItem_description__8Mjhz,.OptimizedVerticalItem_location__2i27s,.OptimizedVerticalItem_review__5nc5z {
+    margin-top: .4rem
+}
+
+.OptimizedVerticalItem_benefitBadges__ThRm9 {
+    margin-top: .6rem
+}
+
+.OptimizedVerticalItem_priceInfo__38IPl {
+    margin-top: .8rem;
+    text-align: right
+}
+
+.OptimizedVerticalItem_caption__3u3JN {
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: .2rem
+}
+
+.OptimizedVerticalItem_feature__1vmeX {
+    text-align: right;
+    margin-top: .8rem
+}
+
+.OptimizedVerticalItem_captionTitle__KgtbH {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.OptimizedVerticalItem_captionBadge__16cy5 {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0
+}
+
+.OptimizedVerticalSwipeWidget_container__qgWwO {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    color: #2e2e2e
+}
+
+.OptimizedVerticalSwipeWidget_container__qgWwO .swiper-button-next,.OptimizedVerticalSwipeWidget_container__qgWwO .swiper-button-prev {
+    background-image: none;
+    top: 7rem
+}
+
+.OptimizedVerticalSwipeWidget_container__qgWwO .OptimizedVerticalSwipeWidget_swiper__31pfs {
+    margin-right: -2rem;
+    margin-left: -2rem
+}
+
+@media screen and (max-width: 15.625em) {
+    .OptimizedVerticalSwipeWidget_container__qgWwO .OptimizedVerticalSwipeWidget_swiper__31pfs {
+        margin-right:-1.5rem;
+        margin-left: -1.5rem
+    }
+}
+
+.OptimizedVerticalSwipeWidget_container__qgWwO .OptimizedVerticalSwipeWidget_swiper__31pfs>div,.OptimizedVerticalSwipeWidget_container__qgWwO .OptimizedVerticalSwipeWidget_swiper__31pfs>div>.swiper-container {
+    overflow: visible
+}
+
+@media screen and (max-width: 20em) {
+    .OptimizedVerticalSwipeWidget_container__qgWwO {
+        font-size:1rem;
+        line-height: 1.2rem
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .OptimizedVerticalSwipeWidget_container__qgWwO {
+        font-size:1.3rem;
+        max-width: 76.8rem
+    }
+}
+
+/*# sourceMappingURL=60f478a374b87489e7fc.css.map*/

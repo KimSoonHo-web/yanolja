@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.ReservationMapper">
+
+
+	<!-- 유저정보 -->
+	<select id="userInfo">
+		SELECT *
+		FROM TB_USER
+		WHERE USER_No = #{userNo}
+	</select>
+
+	<!-- 예약정보 예약테이블에 저장 -->
+	<insert id="insertReservation"
+		parameterType="com.example.demo.vo.KakaoPayReadyVo">
+		INSERT INTO tb_reservation (
+		USER_NO, PHONE_NO,
+		ROOM_NO,
+		TOTAL_PEOPLE, CHECK_IN_DATE, CHECK_OUT_DATE,
+		CREATED_AT,
+		UPDATED_AT,
+		USER_EMAIL, USER_NAME, PRICE
+		) VALUES (
+		#{userNo},
+		#{phoneNo}, #{roomNo},
+		#{totalPeople}, #{checkInDate},
+		#{checkOutDate}, now(), now(),
+		#{userEmail}, #{userName}, #{price}
+		)
+	</insert>
+
+
+	<insert id="decreaseRoomCount">
+		INSERT INTO
+		tb_room_availability (room_no, date, available_count)
+		SELECT
+		r.ROOM_NO,
+		#{formattedCheckInDate},
+		r.ROOM_COUNT - IFNULL((SELECT COUNT(*) FROM tb_reservation
+		WHERE #{formattedCheckInDate} BETWEEN CHECK_IN_DATE AND CHECK_OUT_DATE
+		AND ROOM_NO = r.ROOM_NO), 0)
+		FROM
+		tb_room AS r
+		WHERE
+		r.ROOM_NO = #{roomNo}
+		ON DUPLICATE KEY UPDATE
+		available_count = VALUES(available_count);
+	</insert>
+
+
+</mapper>

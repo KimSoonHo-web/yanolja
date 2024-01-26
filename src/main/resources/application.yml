@@ -1,0 +1,76 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    session:
+      timeout: 1000m 
+      
+mybatis:
+  # mapper 경로 지정
+  mapper-locations: mybatis/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+        
+spring:
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 10MB 
+  file:
+  dir: D:/test/
+  
+  mail:
+    host: smtp.naver.com
+    port: 587
+    username: rlatnsgh25@naver.com
+    password: dw50214263!
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+##thymeleaf 설정
+#  thymeleaf:
+#    check-template-location: true
+#    prefix: classpath:/templates/   # .html 파일을 불러오기 위한 경로 설정(src/main/resources/templates)
+#    suffix: .html   # 파일 확장자
+#    cache: false
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yanolja?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+    
+#  jpa:
+#    open-in-view: true
+#    hibernate:
+#      ddl-auto: create #update #create 테이블을 새로 만들어준다 
+#      naming:
+#      #Entity 를만들 떄 데이터 변수명 이름 그대로 테이블을 만들어줌
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
+#        use-new-id-generator-mappings: false
+#    show-sql: true #console 에 테이블 출력
+#    properties:
+#      hibernate.format_sql: true
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  

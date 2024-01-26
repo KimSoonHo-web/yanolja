@@ -1,0 +1,2946 @@
+.BaseButton_button__tzyL8 {
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	border: none
+}
+
+.BaseButton_pseudo__2cnN7 {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block
+}
+
+.Popup_overlay__3qyL2 {
+	background: transparent;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center
+}
+
+.Popup_overlayAfterOpen__3JzbW {
+	background: rgba(0, 0, 0, .5);
+	transition: all .1s ease-out
+}
+
+.Popup_overlayBeforeClose__11OjB {
+	background: transparent;
+	transition: all .1s ease-in
+}
+
+.Popup_container__3EkkX {
+	width: 29.6rem;
+	background: #fff;
+	border-radius: 1.2rem;
+	margin: auto;
+	padding: 3.2rem 0 .8rem;
+	opacity: 0;
+	text-align: center;
+	z-index: 100;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: scale(.8) translate(-50%, -50%);
+	transform: scale(.8) translate(-50%, -50%)
+}
+
+.Popup_containerAfterOpen__2bzfE {
+	-webkit-transform: scale(1) translate(-50%, -50%);
+	transform: scale(1) translate(-50%, -50%);
+	opacity: 1;
+	transition: all .1s ease-out
+}
+
+.Popup_containerBeforeClose__2FISq {
+	-webkit-transform: scale(.9) translate(-50%, -50%);
+	transform: scale(.9) translate(-50%, -50%);
+	opacity: 0;
+	transition: all .1s ease-in
+}
+
+.Popup_textWrap__3Olv2 {
+	padding: 0 2rem;
+	white-space: pre-wrap
+}
+
+.Popup_title__3vqMu {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.9rem
+}
+
+.Popup_description__1ujj9 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #919191;
+	line-height: 1.7rem
+}
+
+.Popup_title__3vqMu+.Popup_description__1ujj9 {
+	padding-top: 1.2rem
+}
+
+.Popup_buttonsContainer__1fcay {
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 1.6rem
+}
+
+.Popup_buttonWrap__TDMP6 {
+	margin: 0 auto;
+	max-width: 100%;
+	min-width: calc(50% - .4rem)
+}
+
+.Popup_buttonWrap__TDMP6+.Popup_buttonWrap__TDMP6 {
+	margin-left: .8rem
+}
+
+.Popup_mainBtn__3Cijg,
+.Popup_subBtn__2ZAOD {
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	padding: 1.1rem .2rem 1rem;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	min-width: 8rem;
+	line-height: 1.9rem;
+	text-align: center
+}
+
+.Popup_subBtn__2ZAOD {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #1a1a1a
+}
+
+.Popup_subBtn__2ZAOD:hover {
+	background: rgba(0, 0, 0, .05);
+	border-radius: .6rem
+}
+
+.Popup_subBtn__2ZAOD:active {
+	background: rgba(0, 0, 0, .1);
+	border-radius: .6rem
+}
+
+.Popup_mainBtn__3Cijg {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #0152cc
+}
+
+.Popup_mainBtn__3Cijg:hover {
+	background: rgba(1, 82, 204, .05);
+	border-radius: .6rem
+}
+
+.Popup_mainBtn__3Cijg:active {
+	background: rgba(1, 82, 204, .1);
+	border-radius: .6rem
+}
+
+.Popup_textWrap__3Olv2+.Popup_buttonsContainer__1fcay {
+	margin-top: 2rem
+}
+
+.PrimaryBanner_container__2EAFa {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 60;
+	width: 100%;
+	height: 4rem;
+	margin: 0 auto;
+	background: #fdf4f7 !important
+}
+
+.PrimaryBanner_height__1ZesE {
+	width: 0;
+	height: 4rem
+}
+
+.OptimizedPriceInfo_TEXT__TITLE__1i0tp,
+.OptimizedPriceInfo_TEXT__TITLE__BOLD__2gW1-,
+.OptimizedPriceInfo_TEXT__TITLE__BOLD_GRAY__189pB,
+.OptimizedPriceInfo_TEXT__TITLE__GRAY__2dAKY {
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #1a1a1a
+}
+
+.OptimizedPriceInfo_TEXT__TITLE__1i0tp {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143
+}
+
+.OptimizedPriceInfo_TEXT__TITLE__BOLD__2gW1- {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875
+}
+
+.OptimizedPriceInfo_TEXT__TITLE__GRAY__2dAKY {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__TITLE__BOLD_GRAY__189pB {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__DESCRIPTION__tYy36 {
+	display: block;
+	display: -webkit-box;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #616161
+}
+
+.OptimizedPriceInfo_TEXT__DESCRIPTION__tYy36,
+.OptimizedPriceInfo_TEXT__LOCATION__13GPc {
+	font-size: 1.2rem;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.25
+}
+
+.OptimizedPriceInfo_TEXT__LOCATION__13GPc {
+	white-space: nowrap;
+	display: block;
+	margin-bottom: .2rem;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__CAPTION__STRIKE__3-1bI {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-decoration: line-through;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__RANKING__3UfEj,
+.OptimizedPriceInfo_TEXT__RANKING_DESCRIPTION__eJ6cZ {
+	font-size: 1.2rem;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.2rem;
+	height: 2.4rem;
+	border-radius: .4rem 0;
+	background-color: rgba(0, 0, 0, .8);
+	line-height: 2.4rem;
+	text-align: center;
+	color: #fff
+}
+
+.OptimizedPriceInfo_TEXT__LOCATION_DESCRIPTION__2Ork2,
+.OptimizedPriceInfo_TEXT__LOCATION_DESCRIPTION__FULL__3R1M3 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	line-height: 1.1818181818;
+	color: #fff
+}
+
+.OptimizedPriceInfo_TEXT__LOCATION_DESCRIPTION__2Ork2>i,
+.OptimizedPriceInfo_TEXT__LOCATION_DESCRIPTION__FULL__3R1M3>i {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-white-fill.svg) no-repeat 50%;
+	vertical-align: middle
+}
+
+.OptimizedPriceInfo_TEXT__LOCATION_DESCRIPTION__2Ork2 {
+	padding: .3rem .4rem .2rem .2rem;
+	border-radius: .4rem;
+	max-width: 100%
+}
+
+.OptimizedPriceInfo_TEXT__LOCATION_DESCRIPTION__FULL__3R1M3 {
+	right: 0;
+	padding: .3rem 0 .2rem .2rem
+}
+
+.OptimizedPriceInfo_TEXT__CAPTION__3dJyN {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-right: .2rem;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__CAPTION__REGULAR__3VleV {
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-right: .2rem;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_PROMOTION__346l3 {
+	font-size: 1.3rem;
+	line-height: 1.2307692308;
+	color: #de2e5f
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_LANDMARK__3a4gh:before,
+.OptimizedPriceInfo_TEXT__INFORMATION_LOCATION__3QwQh:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: .2rem;
+	vertical-align: -.1rem;
+	content: ""
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_LOCATION__3QwQh {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_LOCATION__3QwQh:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-gray-fill.svg) no-repeat 50%
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_LANDMARK__3a4gh {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_LANDMARK__3a4gh:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/ico-mapbottom-stars-h-14.svg) no-repeat 50%
+}
+
+.OptimizedPriceInfo_TEXT__INFORMATION_ROOM__37Ylm {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedPriceInfo_BADGE__JTA_MARK__2Jqb_,
+.OptimizedPriceInfo_BADGE__KQ_MARK__2yfGY,
+.OptimizedPriceInfo_BADGE__KTO_MARK__O_QJd {
+	font-size: 1rem;
+	font-weight: 400;
+	height: 1.5rem;
+	padding: .1rem .2rem 0 .1rem;
+	border: .1rem solid #e6e6e6;
+	border-radius: .3rem;
+	color: #919191
+}
+
+.OptimizedPriceInfo_BADGE__KTO_MARK__O_QJd:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kto.svg) no-repeat 50%;
+	vertical-align: -.18rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedPriceInfo_BADGE__JTA_MARK__2Jqb_:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_jta.svg) no-repeat 50%;
+	vertical-align: -.15rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedPriceInfo_BADGE__KQ_MARK__2yfGY:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kq.svg) no-repeat 50%;
+	vertical-align: -.1rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedPriceInfo_TEXT__SALE__2vcby {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.1875;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__SALE_UNIT__31BQL {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f
+}
+
+.OptimizedPriceInfo_TEXT__PRICE__1Mn7Q {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__PRICE_UNIT__3R2JK {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.1333333333;
+	color: #1a1a1a;
+	vertical-align: .1rem
+}
+
+.OptimizedPriceInfo_TEXT__PRICE_UNIT__SMALL__1MShu {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedPriceInfo_TEXT__DATE_BASED_NORMAL_PRICES__14OsP,
+.OptimizedPriceInfo_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__EKiS5 {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__EKiS5 {
+	text-decoration: line-through;
+	margin-left: .2rem
+}
+
+.OptimizedPriceInfo_TEXT__DAILY_BASIS__1cBea {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__SPECIAL_PRICE__3THAQ {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f
+}
+
+.OptimizedPriceInfo_TEXT__DATE_BASED_SALES_COMPLETED__fkuIY {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__SALE_POSTFIX__MLauo {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__SALE_PREFIX__BAR__3KCQa {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedPriceInfo_TEXT__SALE_PREFIX__BAR__3KCQa:after {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: .6rem;
+	border-right: .1rem solid #d9d9d9;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__SALE_PREFIX__2DleM {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__CHECK_OTHER_DATES__1MAzt {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #1a1a1a;
+	line-height: 1.25
+}
+
+.OptimizedPriceInfo_TEXT__CHECK_OTHER_DATES__1MAzt:after {
+	content: "";
+	width: .5rem;
+	height: .9rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-arrow-small-black.svg) no-repeat 50%;
+	display: inline-block;
+	margin-left: .2rem;
+	margin-top: .2rem
+}
+
+.OptimizedPriceInfo_TEXT__SALES_COMPLETED__1Y8eU {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191
+}
+
+.OptimizedPriceInfo_TEXT__RESERVATION_CLOSED__2WyEu {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #616161
+}
+
+.OptimizedPriceInfo_TEXT__EVENT_DISCOUNT_RATE__1HJhj {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__EVENT_SPECIAL_TYPE__HzW1F {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__EVENT_SPECIAL_PRICE__STRIKE__U9cdM {
+	text-decoration: line-through
+}
+
+.OptimizedPriceInfo_TEXT__EVENT_SPECIAL_PRICE__2Rjki,
+.OptimizedPriceInfo_TEXT__EVENT_SPECIAL_PRICE__STRIKE__U9cdM {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedPriceInfo_TEXT__DAILY_PRICE__1nNZh,
+.OptimizedPriceInfo_TEXT__PRICE_DATE__CfEYA {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25
+}
+
+.OptimizedPriceInfo_TEXT__PRICE_DATE__CfEYA {
+	color: #1a1a1a
+}
+
+.OptimizedPriceInfo_BADGE__BORDER_YAPINK__iT714 {
+	border-radius: .4rem;
+	color: #de2e5f;
+	border: .1rem solid rgba(222, 46, 95, .2)
+}
+
+.OptimizedPriceInfo_BADGE__BORDER_GRAY__AR5bT,
+.OptimizedPriceInfo_BADGE__BORDER_YAPINK__iT714 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: .3rem .4rem .2rem;
+	margin: 0 .4rem .4rem 0;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	background: #fff
+}
+
+.OptimizedPriceInfo_BADGE__BORDER_GRAY__AR5bT {
+	border-radius: .4rem;
+	color: #616161;
+	border: .1rem solid rgba(97, 97, 97, .2)
+}
+
+.OptimizedPriceInfo_BADGE__BORDER_YACARE__1if8t {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 0 .4rem .4rem 0;
+	border-radius: .4rem;
+	color: #18a34d;
+	border: .1rem solid rgba(24, 163, 77, .2);
+	background: #fff
+}
+
+.OptimizedPriceInfo_BADGE__BORDER_YACARE__1if8t,
+.OptimizedPriceInfo_BADGE__FILL_GRAY__2f03l {
+	padding: .3rem .4rem .2rem;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex
+}
+
+.OptimizedPriceInfo_BADGE__FILL_GRAY__2f03l {
+	font-size: 1rem;
+	font-weight: 400;
+	border-radius: .4rem;
+	color: #1a1a1a;
+	border: .1rem solid #e6e6e6;
+	background: #f2f2f2;
+	border-radius: .2rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedPriceInfo_BENEFIT__PAIR_YAPINK__1O5ZJ {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedPriceInfo_BENEFIT__PAIR_YAPINK__1O5ZJ .OptimizedPriceInfo_name__3I7os {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedPriceInfo_BENEFIT__PAIR_YAPINK__1O5ZJ .OptimizedPriceInfo_desc__HaGWd {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedPriceInfo_BADGE__HOT_DEAL__2-Do3 {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedPriceInfo_BADGE__HOT_DEAL__2-Do3 .OptimizedPriceInfo_name__3I7os {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .55rem .45rem .25rem 2.1rem;
+	padding-top: .05rem;
+	height: 2rem
+}
+
+.OptimizedPriceInfo_BADGE__HOT_DEAL_DESCRIPTION__mfuhJ {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0;
+	height: 2rem
+}
+
+.OptimizedPriceInfo_BADGE__HOT_DEAL_DESCRIPTION__mfuhJ .OptimizedPriceInfo_name__3I7os {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .6rem .45rem .25rem 2.1rem;
+	padding-top: .2rem;
+	line-height: 1.35rem;
+	height: 2.3rem
+}
+
+.OptimizedPriceInfo_BADGE__HOT_DEAL_DESCRIPTION__mfuhJ .OptimizedPriceInfo_desc__HaGWd {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding: 0 .5rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedPriceInfo_BADGE__PAIR_YAPINK__2EzEz {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedPriceInfo_BADGE__PAIR_YAPINK__2EzEz .OptimizedPriceInfo_name__3I7os {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedPriceInfo_BADGE__PAIR_YAPINK__2EzEz .OptimizedPriceInfo_desc__HaGWd {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedPriceInfo_BADGE__FILL_BLUE__3Gj8I {
+	padding: .3rem .7rem;
+	color: #fff;
+	background: #0152cc;
+	border-radius: .4rem
+}
+
+.OptimizedPriceInfo_BADGE__FILL_BLUE__3Gj8I .OptimizedPriceInfo_name__3I7os {
+	font-size: 1rem;
+	font-weight: 400
+}
+
+.OptimizedPriceInfo_BADGE__FILL_BLUE__3Gj8I .OptimizedPriceInfo_name__3I7os:after {
+	content: ": "
+}
+
+.OptimizedPriceInfo_BADGE__FILL_BLUE__3Gj8I .OptimizedPriceInfo_desc__HaGWd {
+	font-size: 1rem;
+	font-weight: 700
+}
+
+.OptimizedPriceInfo_TEXT__NOTICE__190aB {
+	display: -webkit-flex;
+	display: flex
+}
+
+.OptimizedPriceInfo_TEXT__NOTICE__190aB .OptimizedPriceInfo_name__3I7os {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	min-width: 3.6rem;
+	height: 1.5rem;
+	padding: .25rem .4rem .2rem;
+	background: #919191;
+	color: #fff;
+	border-radius: .4rem;
+	-webkit-justify-content: center;
+	justify-content: center
+}
+
+.OptimizedPriceInfo_TEXT__NOTICE__190aB .OptimizedPriceInfo_desc__HaGWd {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem;
+	vertical-align: middle
+}
+
+.OptimizedPriceInfo_IMAGE__INSTANT_DISCOUNT__1kV0D {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/badge-infinitecoupon-60.svg) no-repeat;
+	width: 6rem;
+	height: 6rem;
+	position: absolute;
+	top: 0;
+	left: .8rem
+}
+
+.OptimizedPriceInfo_IMAGE__SPECIAL_DISCOUNT__U5NXA {
+	background: linear-gradient(90deg, #8e4acc, #c54acc);
+	border-radius: .4rem 0 .4rem 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: .4rem .6rem;
+	min-width: 5.3rem;
+	height: 2.4rem;
+	position: absolute;
+	top: 0
+}
+
+.OptimizedPriceInfo_IMAGE__SPECIAL_DISCOUNT__U5NXA:after {
+	font-size: 1rem;
+	font-weight: 700;
+	content: "�밸퀎 �좎씤";
+	color: #fff
+}
+
+.OptimizedPriceInfo_priceWrapper__wNcrx {
+	margin-bottom: .2rem
+}
+
+.NaverHotelBanner_banner__2EvJ-,
+.NaverHotelBanner_event__3_n42 {
+	display: block;
+	width: 100%;
+	height: 4rem;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+@media screen and (min-width:22.5em) {
+
+	.NaverHotelBanner_banner__2EvJ-,
+	.NaverHotelBanner_event__3_n42 {
+		background-size: contain
+	}
+}
+
+.NaverHotelBanner_banner__2EvJ- {
+	background-image: url(//yaimg.yanolja.com/joy/sunny/static/images/promotion/bnr-naver-hotel-40-v2.png)
+}
+
+.NaverHotelBanner_event__3_n42 {
+	background-image: url(//yaimg.yanolja.com/joy/sunny/static/images/promotion/bnr-naver-hotel-event-v2.png)
+}
+
+.OptimizedItemText_TEXT__TITLE__2tPWS,
+.OptimizedItemText_TEXT__TITLE__BOLD__1p1GS,
+.OptimizedItemText_TEXT__TITLE__BOLD_GRAY__RIPih,
+.OptimizedItemText_TEXT__TITLE__GRAY__1Gjim {
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #1a1a1a
+}
+
+.OptimizedItemText_TEXT__TITLE__2tPWS {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143
+}
+
+.OptimizedItemText_TEXT__TITLE__BOLD__1p1GS {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875
+}
+
+.OptimizedItemText_TEXT__TITLE__GRAY__1Gjim {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__TITLE__BOLD_GRAY__RIPih {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__DESCRIPTION__1FEIH {
+	display: block;
+	display: -webkit-box;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #616161
+}
+
+.OptimizedItemText_TEXT__DESCRIPTION__1FEIH,
+.OptimizedItemText_TEXT__LOCATION__FPpnG {
+	font-size: 1.2rem;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.25
+}
+
+.OptimizedItemText_TEXT__LOCATION__FPpnG {
+	white-space: nowrap;
+	display: block;
+	margin-bottom: .2rem;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__CAPTION__STRIKE__1TfVk {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-decoration: line-through;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__RANKING__3eO-T,
+.OptimizedItemText_TEXT__RANKING_DESCRIPTION__2Ral3 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.2rem;
+	height: 2.4rem;
+	border-radius: .4rem 0;
+	background-color: rgba(0, 0, 0, .8);
+	line-height: 2.4rem;
+	text-align: center;
+	color: #fff
+}
+
+.OptimizedItemText_TEXT__LOCATION_DESCRIPTION__edCrb,
+.OptimizedItemText_TEXT__LOCATION_DESCRIPTION__FULL__1V7L7 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	line-height: 1.1818181818;
+	color: #fff
+}
+
+.OptimizedItemText_TEXT__LOCATION_DESCRIPTION__edCrb>i,
+.OptimizedItemText_TEXT__LOCATION_DESCRIPTION__FULL__1V7L7>i {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-white-fill.svg) no-repeat 50%;
+	vertical-align: middle
+}
+
+.OptimizedItemText_TEXT__LOCATION_DESCRIPTION__edCrb {
+	padding: .3rem .4rem .2rem .2rem;
+	border-radius: .4rem;
+	max-width: 100%
+}
+
+.OptimizedItemText_TEXT__LOCATION_DESCRIPTION__FULL__1V7L7 {
+	right: 0;
+	padding: .3rem 0 .2rem .2rem
+}
+
+.OptimizedItemText_TEXT__CAPTION__3siJN {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-right: .2rem;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__CAPTION__REGULAR__3glUq {
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-right: .2rem;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedItemText_TEXT__INFORMATION_PROMOTION__Wa8dw {
+	font-size: 1.3rem;
+	line-height: 1.2307692308;
+	color: #de2e5f
+}
+
+.OptimizedItemText_TEXT__INFORMATION_LANDMARK__2IZcw:before,
+.OptimizedItemText_TEXT__INFORMATION_LOCATION__38GTa:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: .2rem;
+	vertical-align: -.1rem;
+	content: ""
+}
+
+.OptimizedItemText_TEXT__INFORMATION_LOCATION__38GTa {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedItemText_TEXT__INFORMATION_LOCATION__38GTa:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-gray-fill.svg) no-repeat 50%
+}
+
+.OptimizedItemText_TEXT__INFORMATION_LANDMARK__2IZcw {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedItemText_TEXT__INFORMATION_LANDMARK__2IZcw:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/ico-mapbottom-stars-h-14.svg) no-repeat 50%
+}
+
+.OptimizedItemText_TEXT__INFORMATION_ROOM__pAqmf {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedItemText_BADGE__JTA_MARK__1zgWE,
+.OptimizedItemText_BADGE__KQ_MARK__cfzcW,
+.OptimizedItemText_BADGE__KTO_MARK__mh3Zu {
+	font-size: 1rem;
+	font-weight: 400;
+	height: 1.5rem;
+	padding: .1rem .2rem 0 .1rem;
+	border: .1rem solid #e6e6e6;
+	border-radius: .3rem;
+	color: #919191
+}
+
+.OptimizedItemText_BADGE__KTO_MARK__mh3Zu:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kto.svg) no-repeat 50%;
+	vertical-align: -.18rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedItemText_BADGE__JTA_MARK__1zgWE:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_jta.svg) no-repeat 50%;
+	vertical-align: -.15rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedItemText_BADGE__KQ_MARK__cfzcW:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kq.svg) no-repeat 50%;
+	vertical-align: -.1rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedItemText_TEXT__SALE__1tnGj {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.1875;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__SALE_UNIT__3hJnG {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f
+}
+
+.OptimizedItemText_TEXT__PRICE__2xmke {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__PRICE_UNIT__DvfNE {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.1333333333;
+	color: #1a1a1a;
+	vertical-align: .1rem
+}
+
+.OptimizedItemText_TEXT__PRICE_UNIT__SMALL__1NPpF {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedItemText_TEXT__DATE_BASED_NORMAL_PRICES__3RalO,
+.OptimizedItemText_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__36L9r {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__36L9r {
+	text-decoration: line-through;
+	margin-left: .2rem
+}
+
+.OptimizedItemText_TEXT__DAILY_BASIS__U1G4T {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__SPECIAL_PRICE__M9_G- {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f
+}
+
+.OptimizedItemText_TEXT__DATE_BASED_SALES_COMPLETED__2ouLI {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__SALE_POSTFIX__1E9In {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__SALE_PREFIX__BAR__1dRZy {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedItemText_TEXT__SALE_PREFIX__BAR__1dRZy:after {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: .6rem;
+	border-right: .1rem solid #d9d9d9;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__SALE_PREFIX__27x2m {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__CHECK_OTHER_DATES__tK8ie {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #1a1a1a;
+	line-height: 1.25
+}
+
+.OptimizedItemText_TEXT__CHECK_OTHER_DATES__tK8ie:after {
+	content: "";
+	width: .5rem;
+	height: .9rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-arrow-small-black.svg) no-repeat 50%;
+	display: inline-block;
+	margin-left: .2rem;
+	margin-top: .2rem
+}
+
+.OptimizedItemText_TEXT__SALES_COMPLETED__3AmgR {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191
+}
+
+.OptimizedItemText_TEXT__RESERVATION_CLOSED___GlPR {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #616161
+}
+
+.OptimizedItemText_TEXT__EVENT_DISCOUNT_RATE__3r1mS {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__EVENT_SPECIAL_TYPE__1BEnh {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__EVENT_SPECIAL_PRICE__STRIKE__3zdOj {
+	text-decoration: line-through
+}
+
+.OptimizedItemText_TEXT__EVENT_SPECIAL_PRICE__2K92_,
+.OptimizedItemText_TEXT__EVENT_SPECIAL_PRICE__STRIKE__3zdOj {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedItemText_TEXT__DAILY_PRICE__20Cp1,
+.OptimizedItemText_TEXT__PRICE_DATE__DZbub {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25
+}
+
+.OptimizedItemText_TEXT__PRICE_DATE__DZbub {
+	color: #1a1a1a
+}
+
+.OptimizedItemText_BADGE__BORDER_YAPINK__25Aa0 {
+	border-radius: .4rem;
+	color: #de2e5f;
+	border: .1rem solid rgba(222, 46, 95, .2)
+}
+
+.OptimizedItemText_BADGE__BORDER_GRAY__1fFvV,
+.OptimizedItemText_BADGE__BORDER_YAPINK__25Aa0 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: .3rem .4rem .2rem;
+	margin: 0 .4rem .4rem 0;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	background: #fff
+}
+
+.OptimizedItemText_BADGE__BORDER_GRAY__1fFvV {
+	border-radius: .4rem;
+	color: #616161;
+	border: .1rem solid rgba(97, 97, 97, .2)
+}
+
+.OptimizedItemText_BADGE__BORDER_YACARE__bF_7r {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 0 .4rem .4rem 0;
+	border-radius: .4rem;
+	color: #18a34d;
+	border: .1rem solid rgba(24, 163, 77, .2);
+	background: #fff
+}
+
+.OptimizedItemText_BADGE__BORDER_YACARE__bF_7r,
+.OptimizedItemText_BADGE__FILL_GRAY__3VtzF {
+	padding: .3rem .4rem .2rem;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex
+}
+
+.OptimizedItemText_BADGE__FILL_GRAY__3VtzF {
+	font-size: 1rem;
+	font-weight: 400;
+	border-radius: .4rem;
+	color: #1a1a1a;
+	border: .1rem solid #e6e6e6;
+	background: #f2f2f2;
+	border-radius: .2rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedItemText_BENEFIT__PAIR_YAPINK__22d3_ {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedItemText_BENEFIT__PAIR_YAPINK__22d3_ .OptimizedItemText_name__14hYm {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedItemText_BENEFIT__PAIR_YAPINK__22d3_ .OptimizedItemText_desc__1uolT {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedItemText_BADGE__HOT_DEAL__3WHlW {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedItemText_BADGE__HOT_DEAL__3WHlW .OptimizedItemText_name__14hYm {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .55rem .45rem .25rem 2.1rem;
+	padding-top: .05rem;
+	height: 2rem
+}
+
+.OptimizedItemText_BADGE__HOT_DEAL_DESCRIPTION__3mJ3Z {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0;
+	height: 2rem
+}
+
+.OptimizedItemText_BADGE__HOT_DEAL_DESCRIPTION__3mJ3Z .OptimizedItemText_name__14hYm {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .6rem .45rem .25rem 2.1rem;
+	padding-top: .2rem;
+	line-height: 1.35rem;
+	height: 2.3rem
+}
+
+.OptimizedItemText_BADGE__HOT_DEAL_DESCRIPTION__3mJ3Z .OptimizedItemText_desc__1uolT {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding: 0 .5rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedItemText_BADGE__PAIR_YAPINK__ZJX40 {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedItemText_BADGE__PAIR_YAPINK__ZJX40 .OptimizedItemText_name__14hYm {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedItemText_BADGE__PAIR_YAPINK__ZJX40 .OptimizedItemText_desc__1uolT {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedItemText_BADGE__FILL_BLUE__1xST- {
+	padding: .3rem .7rem;
+	color: #fff;
+	background: #0152cc;
+	border-radius: .4rem
+}
+
+.OptimizedItemText_BADGE__FILL_BLUE__1xST- .OptimizedItemText_name__14hYm {
+	font-size: 1rem;
+	font-weight: 400
+}
+
+.OptimizedItemText_BADGE__FILL_BLUE__1xST- .OptimizedItemText_name__14hYm:after {
+	content: ": "
+}
+
+.OptimizedItemText_BADGE__FILL_BLUE__1xST- .OptimizedItemText_desc__1uolT {
+	font-size: 1rem;
+	font-weight: 700
+}
+
+.OptimizedItemText_TEXT__NOTICE__5ajKT {
+	display: -webkit-flex;
+	display: flex
+}
+
+.OptimizedItemText_TEXT__NOTICE__5ajKT .OptimizedItemText_name__14hYm {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	min-width: 3.6rem;
+	height: 1.5rem;
+	padding: .25rem .4rem .2rem;
+	background: #919191;
+	color: #fff;
+	border-radius: .4rem;
+	-webkit-justify-content: center;
+	justify-content: center
+}
+
+.OptimizedItemText_TEXT__NOTICE__5ajKT .OptimizedItemText_desc__1uolT {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem;
+	vertical-align: middle
+}
+
+.OptimizedItemText_IMAGE__INSTANT_DISCOUNT__1YGaI {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/badge-infinitecoupon-60.svg) no-repeat;
+	width: 6rem;
+	height: 6rem;
+	position: absolute;
+	top: 0;
+	left: .8rem
+}
+
+.OptimizedItemText_IMAGE__SPECIAL_DISCOUNT__2ihOx {
+	background: linear-gradient(90deg, #8e4acc, #c54acc);
+	border-radius: .4rem 0 .4rem 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: .4rem .6rem;
+	min-width: 5.3rem;
+	height: 2.4rem;
+	position: absolute;
+	top: 0
+}
+
+.OptimizedItemText_IMAGE__SPECIAL_DISCOUNT__2ihOx:after {
+	font-size: 1rem;
+	font-weight: 700;
+	content: "�밸퀎 �좎씤";
+	color: #fff
+}
+
+.ToastItem_item__20fWW {
+	opacity: 0;
+	text-align: center;
+	transition: all .25s cubic-bezier(.4, 0, .2, 1);
+	-webkit-transform: translate3d(0, 1rem, 0);
+	transform: translate3d(0, 1rem, 0)
+}
+
+.ToastItem_item__20fWW+.ToastItem_item__20fWW {
+	margin-top: .8rem
+}
+
+.ToastItem_itemMounted__3H5Ym {
+	opacity: 1;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0)
+}
+
+.ToastItem_wrapper__2155S {
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	background: rgba(0, 0, 0, .7);
+	font-size: 1.5rem;
+	line-height: 1.13;
+	padding: 1.3rem 3.5rem;
+	text-align: center;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-radius: .8rem
+}
+
+.OptimizedThumbnail_TEXT__TITLE__1WbX8,
+.OptimizedThumbnail_TEXT__TITLE__BOLD__AsiNm,
+.OptimizedThumbnail_TEXT__TITLE__BOLD_GRAY__2HUBW,
+.OptimizedThumbnail_TEXT__TITLE__GRAY__3Eh8z {
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #1a1a1a
+}
+
+.OptimizedThumbnail_TEXT__TITLE__1WbX8 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143
+}
+
+.OptimizedThumbnail_TEXT__TITLE__BOLD__AsiNm {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875
+}
+
+.OptimizedThumbnail_TEXT__TITLE__GRAY__3Eh8z {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__TITLE__BOLD_GRAY__2HUBW {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__DESCRIPTION__3ykkO {
+	display: block;
+	display: -webkit-box;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #616161
+}
+
+.OptimizedThumbnail_TEXT__DESCRIPTION__3ykkO,
+.OptimizedThumbnail_TEXT__LOCATION__2-EMC {
+	font-size: 1.2rem;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.25
+}
+
+.OptimizedThumbnail_TEXT__LOCATION__2-EMC {
+	white-space: nowrap;
+	display: block;
+	margin-bottom: .2rem;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__CAPTION__STRIKE__3d7Ow {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-decoration: line-through;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__RANKING__30nCO,
+.OptimizedThumbnail_TEXT__RANKING_DESCRIPTION__2SbIQ {
+	font-size: 1.2rem;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.2rem;
+	height: 2.4rem;
+	border-radius: .4rem 0;
+	background-color: rgba(0, 0, 0, .8);
+	line-height: 2.4rem;
+	text-align: center;
+	color: #fff
+}
+
+.OptimizedThumbnail_TEXT__LOCATION_DESCRIPTION__3nTvc,
+.OptimizedThumbnail_TEXT__LOCATION_DESCRIPTION__FULL__2rZCO {
+	font-size: 1.1rem;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	line-height: 1.1818181818;
+	color: #fff
+}
+
+.OptimizedThumbnail_TEXT__LOCATION_DESCRIPTION__3nTvc>i,
+.OptimizedThumbnail_TEXT__LOCATION_DESCRIPTION__FULL__2rZCO>i {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-white-fill.svg) no-repeat 50%;
+	vertical-align: middle
+}
+
+.OptimizedThumbnail_TEXT__LOCATION_DESCRIPTION__3nTvc {
+	padding: .3rem .4rem .2rem .2rem;
+	border-radius: .4rem;
+	max-width: 100%
+}
+
+.OptimizedThumbnail_TEXT__LOCATION_DESCRIPTION__FULL__2rZCO {
+	right: 0;
+	padding: .3rem 0 .2rem .2rem
+}
+
+.OptimizedThumbnail_TEXT__CAPTION__3j_Q0 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-right: .2rem;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__CAPTION__REGULAR__3E4H3 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-right: .2rem;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_PROMOTION__2ToRE {
+	font-size: 1.3rem;
+	line-height: 1.2307692308;
+	color: #de2e5f
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_LANDMARK__3KAd9:before,
+.OptimizedThumbnail_TEXT__INFORMATION_LOCATION__15Xp2:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: .2rem;
+	vertical-align: -.1rem;
+	content: ""
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_LOCATION__15Xp2 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_LOCATION__15Xp2:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-gray-fill.svg) no-repeat 50%
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_LANDMARK__3KAd9 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_LANDMARK__3KAd9:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/ico-mapbottom-stars-h-14.svg) no-repeat 50%
+}
+
+.OptimizedThumbnail_TEXT__INFORMATION_ROOM__KCUb_ {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedThumbnail_BADGE__JTA_MARK__3SLmx,
+.OptimizedThumbnail_BADGE__KQ_MARK__1kGAk,
+.OptimizedThumbnail_BADGE__KTO_MARK__1hOl4 {
+	font-size: 1rem;
+	font-weight: 400;
+	height: 1.5rem;
+	padding: .1rem .2rem 0 .1rem;
+	border: .1rem solid #e6e6e6;
+	border-radius: .3rem;
+	color: #919191
+}
+
+.OptimizedThumbnail_BADGE__KTO_MARK__1hOl4:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kto.svg) no-repeat 50%;
+	vertical-align: -.18rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedThumbnail_BADGE__JTA_MARK__3SLmx:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_jta.svg) no-repeat 50%;
+	vertical-align: -.15rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedThumbnail_BADGE__KQ_MARK__1kGAk:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kq.svg) no-repeat 50%;
+	vertical-align: -.1rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedThumbnail_TEXT__SALE__2XVHS {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.1875;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__SALE_UNIT__2Y6ZF {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f
+}
+
+.OptimizedThumbnail_TEXT__PRICE__7c1w1 {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__PRICE_UNIT__1Anrl {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.1333333333;
+	color: #1a1a1a;
+	vertical-align: .1rem
+}
+
+.OptimizedThumbnail_TEXT__PRICE_UNIT__SMALL__-TouG {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedThumbnail_TEXT__DATE_BASED_NORMAL_PRICES__3IjBN,
+.OptimizedThumbnail_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__2k2Ly {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__2k2Ly {
+	text-decoration: line-through;
+	margin-left: .2rem
+}
+
+.OptimizedThumbnail_TEXT__DAILY_BASIS__1kEPv {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__SPECIAL_PRICE__2E9J8 {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f
+}
+
+.OptimizedThumbnail_TEXT__DATE_BASED_SALES_COMPLETED__39liZ {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__SALE_POSTFIX__wrySj {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__SALE_PREFIX__BAR__1p9U4 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedThumbnail_TEXT__SALE_PREFIX__BAR__1p9U4:after {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: .6rem;
+	border-right: .1rem solid #d9d9d9;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__SALE_PREFIX__1T1Iz {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__CHECK_OTHER_DATES__3IJm2 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #1a1a1a;
+	line-height: 1.25
+}
+
+.OptimizedThumbnail_TEXT__CHECK_OTHER_DATES__3IJm2:after {
+	content: "";
+	width: .5rem;
+	height: .9rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-arrow-small-black.svg) no-repeat 50%;
+	display: inline-block;
+	margin-left: .2rem;
+	margin-top: .2rem
+}
+
+.OptimizedThumbnail_TEXT__SALES_COMPLETED__1FIku {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191
+}
+
+.OptimizedThumbnail_TEXT__RESERVATION_CLOSED__1UswD {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #616161
+}
+
+.OptimizedThumbnail_TEXT__EVENT_DISCOUNT_RATE__1eTEQ {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__EVENT_SPECIAL_TYPE__4AklX {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__EVENT_SPECIAL_PRICE__STRIKE__WM8ze {
+	text-decoration: line-through
+}
+
+.OptimizedThumbnail_TEXT__EVENT_SPECIAL_PRICE__2d14V,
+.OptimizedThumbnail_TEXT__EVENT_SPECIAL_PRICE__STRIKE__WM8ze {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedThumbnail_TEXT__DAILY_PRICE__QUKS9,
+.OptimizedThumbnail_TEXT__PRICE_DATE__3Hr4k {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25
+}
+
+.OptimizedThumbnail_TEXT__PRICE_DATE__3Hr4k {
+	color: #1a1a1a
+}
+
+.OptimizedThumbnail_BADGE__BORDER_YAPINK__P8cps {
+	border-radius: .4rem;
+	color: #de2e5f;
+	border: .1rem solid rgba(222, 46, 95, .2)
+}
+
+.OptimizedThumbnail_BADGE__BORDER_GRAY__1eqFP,
+.OptimizedThumbnail_BADGE__BORDER_YAPINK__P8cps {
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: .3rem .4rem .2rem;
+	margin: 0 .4rem .4rem 0;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	background: #fff
+}
+
+.OptimizedThumbnail_BADGE__BORDER_GRAY__1eqFP {
+	border-radius: .4rem;
+	color: #616161;
+	border: .1rem solid rgba(97, 97, 97, .2)
+}
+
+.OptimizedThumbnail_BADGE__BORDER_YACARE__2B8OV {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 0 .4rem .4rem 0;
+	border-radius: .4rem;
+	color: #18a34d;
+	border: .1rem solid rgba(24, 163, 77, .2);
+	background: #fff
+}
+
+.OptimizedThumbnail_BADGE__BORDER_YACARE__2B8OV,
+.OptimizedThumbnail_BADGE__FILL_GRAY__c0Nre {
+	padding: .3rem .4rem .2rem;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex
+}
+
+.OptimizedThumbnail_BADGE__FILL_GRAY__c0Nre {
+	font-size: 1rem;
+	font-weight: 400;
+	border-radius: .4rem;
+	color: #1a1a1a;
+	border: .1rem solid #e6e6e6;
+	background: #f2f2f2;
+	border-radius: .2rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedThumbnail_BENEFIT__PAIR_YAPINK__39876 {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedThumbnail_BENEFIT__PAIR_YAPINK__39876 .OptimizedThumbnail_name__1oGDR {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedThumbnail_BENEFIT__PAIR_YAPINK__39876 .OptimizedThumbnail_desc__392GM {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedThumbnail_BADGE__HOT_DEAL__gF0cd {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedThumbnail_BADGE__HOT_DEAL__gF0cd .OptimizedThumbnail_name__1oGDR {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .55rem .45rem .25rem 2.1rem;
+	padding-top: .05rem;
+	height: 2rem
+}
+
+.OptimizedThumbnail_BADGE__HOT_DEAL_DESCRIPTION__vniNq {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0;
+	height: 2rem
+}
+
+.OptimizedThumbnail_BADGE__HOT_DEAL_DESCRIPTION__vniNq .OptimizedThumbnail_name__1oGDR {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .6rem .45rem .25rem 2.1rem;
+	padding-top: .2rem;
+	line-height: 1.35rem;
+	height: 2.3rem
+}
+
+.OptimizedThumbnail_BADGE__HOT_DEAL_DESCRIPTION__vniNq .OptimizedThumbnail_desc__392GM {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding: 0 .5rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedThumbnail_BADGE__PAIR_YAPINK__1FxUb {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedThumbnail_BADGE__PAIR_YAPINK__1FxUb .OptimizedThumbnail_name__1oGDR {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedThumbnail_BADGE__PAIR_YAPINK__1FxUb .OptimizedThumbnail_desc__392GM {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedThumbnail_BADGE__FILL_BLUE__24GnG {
+	padding: .3rem .7rem;
+	color: #fff;
+	background: #0152cc;
+	border-radius: .4rem
+}
+
+.OptimizedThumbnail_BADGE__FILL_BLUE__24GnG .OptimizedThumbnail_name__1oGDR {
+	font-size: 1rem;
+	font-weight: 400
+}
+
+.OptimizedThumbnail_BADGE__FILL_BLUE__24GnG .OptimizedThumbnail_name__1oGDR:after {
+	content: ": "
+}
+
+.OptimizedThumbnail_BADGE__FILL_BLUE__24GnG .OptimizedThumbnail_desc__392GM {
+	font-size: 1rem;
+	font-weight: 700
+}
+
+.OptimizedThumbnail_TEXT__NOTICE__2CbnW {
+	display: -webkit-flex;
+	display: flex
+}
+
+.OptimizedThumbnail_TEXT__NOTICE__2CbnW .OptimizedThumbnail_name__1oGDR {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	min-width: 3.6rem;
+	height: 1.5rem;
+	padding: .25rem .4rem .2rem;
+	background: #919191;
+	color: #fff;
+	border-radius: .4rem;
+	-webkit-justify-content: center;
+	justify-content: center
+}
+
+.OptimizedThumbnail_TEXT__NOTICE__2CbnW .OptimizedThumbnail_desc__392GM {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem;
+	vertical-align: middle
+}
+
+.OptimizedThumbnail_IMAGE__INSTANT_DISCOUNT__SqHlj {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/badge-infinitecoupon-60.svg) no-repeat;
+	width: 6rem;
+	height: 6rem;
+	position: absolute;
+	top: 0;
+	left: .8rem
+}
+
+.OptimizedThumbnail_IMAGE__SPECIAL_DISCOUNT__mPCHS {
+	background: linear-gradient(90deg, #8e4acc, #c54acc);
+	border-radius: .4rem 0 .4rem 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: .4rem .6rem;
+	min-width: 5.3rem;
+	height: 2.4rem;
+	position: absolute;
+	top: 0
+}
+
+.OptimizedThumbnail_IMAGE__SPECIAL_DISCOUNT__mPCHS:after {
+	font-size: 1rem;
+	font-weight: 700;
+	content: "�밸퀎 �좎씤";
+	color: #fff
+}
+
+.OptimizedThumbnail_imageWrapper__2As4N {
+	position: relative;
+	border-radius: .4rem;
+	overflow: hidden;
+	width: 100%
+}
+
+.OptimizedThumbnail_imagePlaceholder__xAIsN {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/default_gray100.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+.OptimizedThumbnail_lazyLoadPlaceholder__P-uYg {
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2
+}
+
+.Toast_container__1yVJ5 {
+	margin: 0 auto;
+	position: fixed;
+	right: 5rem;
+	bottom: 8rem;
+	left: 5rem;
+	z-index: 100
+}
+
+.Icon_icon__2BP_o {
+	width: 1em;
+	height: 1em;
+	display: inline-block
+}
+
+.Icon_icon__2BP_o>svg {
+	display: block;
+	fill: currentColor;
+	fill-rule: evenodd
+}
+
+.Icon_storybook__3h1ST {
+	width: 4rem;
+	height: 4rem
+}
+
+.OptimizedValuePair_TEXT__TITLE__33Az4,
+.OptimizedValuePair_TEXT__TITLE__BOLD__1tZOz,
+.OptimizedValuePair_TEXT__TITLE__BOLD_GRAY__2i0OW,
+.OptimizedValuePair_TEXT__TITLE__GRAY__2JjDX {
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #1a1a1a
+}
+
+.OptimizedValuePair_TEXT__TITLE__33Az4 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143
+}
+
+.OptimizedValuePair_TEXT__TITLE__BOLD__1tZOz {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875
+}
+
+.OptimizedValuePair_TEXT__TITLE__GRAY__2JjDX {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.2142857143;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__TITLE__BOLD_GRAY__2i0OW {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__DESCRIPTION__2NyAU {
+	display: block;
+	display: -webkit-box;
+	white-space: inherit;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #616161
+}
+
+.OptimizedValuePair_TEXT__DESCRIPTION__2NyAU,
+.OptimizedValuePair_TEXT__LOCATION__1rJ1_ {
+	font-size: 1.2rem;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.25
+}
+
+.OptimizedValuePair_TEXT__LOCATION__1rJ1_ {
+	white-space: nowrap;
+	display: block;
+	margin-bottom: .2rem;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__CAPTION__STRIKE__3qMcr {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-decoration: line-through;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__RANKING__1y457,
+.OptimizedValuePair_TEXT__RANKING_DESCRIPTION__3fryp {
+	font-size: 1.2rem;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.2rem;
+	height: 2.4rem;
+	border-radius: .4rem 0;
+	background-color: rgba(0, 0, 0, .8);
+	line-height: 2.4rem;
+	text-align: center;
+	color: #fff
+}
+
+.OptimizedValuePair_TEXT__LOCATION_DESCRIPTION__16XYz,
+.OptimizedValuePair_TEXT__LOCATION_DESCRIPTION__FULL__3ufj4 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	line-height: 1.1818181818;
+	color: #fff
+}
+
+.OptimizedValuePair_TEXT__LOCATION_DESCRIPTION__16XYz>i,
+.OptimizedValuePair_TEXT__LOCATION_DESCRIPTION__FULL__3ufj4>i {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-white-fill.svg) no-repeat 50%;
+	vertical-align: middle
+}
+
+.OptimizedValuePair_TEXT__LOCATION_DESCRIPTION__16XYz {
+	padding: .3rem .4rem .2rem .2rem;
+	border-radius: .4rem;
+	max-width: 100%
+}
+
+.OptimizedValuePair_TEXT__LOCATION_DESCRIPTION__FULL__3ufj4 {
+	right: 0;
+	padding: .3rem 0 .2rem .2rem
+}
+
+.OptimizedValuePair_TEXT__CAPTION__1ierP {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-right: .2rem;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__CAPTION__REGULAR__1p8Q8 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-right: .2rem;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_PROMOTION__2hIvG {
+	font-size: 1.3rem;
+	line-height: 1.2307692308;
+	color: #de2e5f
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_LANDMARK__Erv-r:before,
+.OptimizedValuePair_TEXT__INFORMATION_LOCATION__1qbdr:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: .2rem;
+	vertical-align: -.1rem;
+	content: ""
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_LOCATION__1qbdr {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_LOCATION__1qbdr:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-location-gray-fill.svg) no-repeat 50%
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_LANDMARK__Erv-r {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #616161
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_LANDMARK__Erv-r:before {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/ico-mapbottom-stars-h-14.svg) no-repeat 50%
+}
+
+.OptimizedValuePair_TEXT__INFORMATION_ROOM__3qavi {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedValuePair_BADGE__JTA_MARK__1-ycG,
+.OptimizedValuePair_BADGE__KQ_MARK__2CKlP,
+.OptimizedValuePair_BADGE__KTO_MARK__g3o6u {
+	font-size: 1rem;
+	font-weight: 400;
+	height: 1.5rem;
+	padding: .1rem .2rem 0 .1rem;
+	border: .1rem solid #e6e6e6;
+	border-radius: .3rem;
+	color: #919191
+}
+
+.OptimizedValuePair_BADGE__KTO_MARK__g3o6u:before {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kto.svg) no-repeat 50%;
+	vertical-align: -.18rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedValuePair_BADGE__JTA_MARK__1-ycG:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_jta.svg) no-repeat 50%;
+	vertical-align: -.15rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedValuePair_BADGE__KQ_MARK__2CKlP:before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .1rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon_kq.svg) no-repeat 50%;
+	vertical-align: -.1rem;
+	content: "";
+	background-size: contain
+}
+
+.OptimizedValuePair_TEXT__SALE__6qMLa {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.1875;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__SALE_UNIT__2vHFQ {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f
+}
+
+.OptimizedValuePair_TEXT__PRICE__1eN6j {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__PRICE_UNIT__1uYwS {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.1333333333;
+	color: #1a1a1a;
+	vertical-align: .1rem
+}
+
+.OptimizedValuePair_TEXT__PRICE_UNIT__SMALL__1Tr82 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedValuePair_TEXT__DATE_BASED_NORMAL_PRICES__2afFI,
+.OptimizedValuePair_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__1TW_F {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__DATE_BASED_NORMAL_PRICES__STRIKE__1TW_F {
+	text-decoration: line-through;
+	margin-left: .2rem
+}
+
+.OptimizedValuePair_TEXT__DAILY_BASIS__6rNyy {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__SPECIAL_PRICE__95ufs {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f
+}
+
+.OptimizedValuePair_TEXT__DATE_BASED_SALES_COMPLETED__BkBlF {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__SALE_POSTFIX__V5OLb {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__SALE_PREFIX__BAR__3ZGe4 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a
+}
+
+.OptimizedValuePair_TEXT__SALE_PREFIX__BAR__3ZGe4:after {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: .6rem;
+	border-right: .1rem solid #d9d9d9;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__SALE_PREFIX__2Qw4u {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #1a1a1a;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__CHECK_OTHER_DATES__V8G7u {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #1a1a1a;
+	line-height: 1.25
+}
+
+.OptimizedValuePair_TEXT__CHECK_OTHER_DATES__V8G7u:after {
+	content: "";
+	width: .5rem;
+	height: .9rem;
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/icon-arrow-small-black.svg) no-repeat 50%;
+	display: inline-block;
+	margin-left: .2rem;
+	margin-top: .2rem
+}
+
+.OptimizedValuePair_TEXT__SALES_COMPLETED__3xPv4 {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #919191
+}
+
+.OptimizedValuePair_TEXT__RESERVATION_CLOSED__3yT5a {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.1333333333;
+	color: #616161
+}
+
+.OptimizedValuePair_TEXT__EVENT_DISCOUNT_RATE__2Wf5h {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__EVENT_SPECIAL_TYPE__2yVIA {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.1818181818;
+	color: #de2e5f;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__EVENT_SPECIAL_PRICE__STRIKE__1HcR2 {
+	text-decoration: line-through
+}
+
+.OptimizedValuePair_TEXT__EVENT_SPECIAL_PRICE__STRIKE__1HcR2,
+.OptimizedValuePair_TEXT__EVENT_SPECIAL_PRICE__XjTf- {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem
+}
+
+.OptimizedValuePair_TEXT__DAILY_PRICE__17aux,
+.OptimizedValuePair_TEXT__PRICE_DATE__20Yc1 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25
+}
+
+.OptimizedValuePair_TEXT__PRICE_DATE__20Yc1 {
+	color: #1a1a1a
+}
+
+.OptimizedValuePair_BADGE__BORDER_YAPINK__37zv9 {
+	border-radius: .4rem;
+	color: #de2e5f;
+	border: .1rem solid rgba(222, 46, 95, .2)
+}
+
+.OptimizedValuePair_BADGE__BORDER_GRAY__3qz7d,
+.OptimizedValuePair_BADGE__BORDER_YAPINK__37zv9 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: .3rem .4rem .2rem;
+	margin: 0 .4rem .4rem 0;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	background: #fff
+}
+
+.OptimizedValuePair_BADGE__BORDER_GRAY__3qz7d {
+	border-radius: .4rem;
+	color: #616161;
+	border: .1rem solid rgba(97, 97, 97, .2)
+}
+
+.OptimizedValuePair_BADGE__BORDER_YACARE__eSEVX {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 0 .4rem .4rem 0;
+	border-radius: .4rem;
+	color: #18a34d;
+	border: .1rem solid rgba(24, 163, 77, .2);
+	background: #fff
+}
+
+.OptimizedValuePair_BADGE__BORDER_YACARE__eSEVX,
+.OptimizedValuePair_BADGE__FILL_GRAY__32zLl {
+	padding: .3rem .4rem .2rem;
+	height: 1.8rem;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: inline-flex
+}
+
+.OptimizedValuePair_BADGE__FILL_GRAY__32zLl {
+	font-size: 1rem;
+	font-weight: 400;
+	border-radius: .4rem;
+	color: #1a1a1a;
+	border: .1rem solid #e6e6e6;
+	background: #f2f2f2;
+	border-radius: .2rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedValuePair_BENEFIT__PAIR_YAPINK__2X7Aj {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedValuePair_BENEFIT__PAIR_YAPINK__2X7Aj .OptimizedValuePair_name__25rvC {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedValuePair_BENEFIT__PAIR_YAPINK__2X7Aj .OptimizedValuePair_desc__3Tn4o {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedValuePair_BADGE__HOT_DEAL__2-hij {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedValuePair_BADGE__HOT_DEAL__2-hij .OptimizedValuePair_name__25rvC {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/img-badge-hotdeal-short-h-20.png);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .55rem .45rem .25rem 2.1rem;
+	padding-top: .05rem;
+	height: 2rem
+}
+
+.OptimizedValuePair_BADGE__HOT_DEAL_DESCRIPTION__1yvui {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	margin: 0 .2rem .4rem 0;
+	height: 2rem
+}
+
+.OptimizedValuePair_BADGE__HOT_DEAL_DESCRIPTION__1yvui .OptimizedValuePair_name__25rvC {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: #fff;
+	-o-border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image: url(//yaimg.yanolja.com/joy/sunny/static/images/hotdeal/ic-taghotdeal-normal-yapink-500-h-24.svg);
+	border-image-slice: 30% 10% 10% 46.341% fill;
+	border-style: solid;
+	border-width: .6rem .45rem .25rem 2.1rem;
+	padding-top: .2rem;
+	line-height: 1.35rem;
+	height: 2.3rem
+}
+
+.OptimizedValuePair_BADGE__HOT_DEAL_DESCRIPTION__1yvui .OptimizedValuePair_desc__3Tn4o {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	box-sizing: border-box;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding: 0 .5rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedValuePair_BADGE__PAIR_YAPINK__2-4hE {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6rem;
+	margin: 0 .2rem .4rem 0
+}
+
+.OptimizedValuePair_BADGE__PAIR_YAPINK__2-4hE .OptimizedValuePair_name__25rvC {
+	padding: 0 .6rem;
+	background: #de2e5f;
+	border-radius: .2rem 0 0 .2rem;
+	border: .1rem solid #de2e5f;
+	color: #fff
+}
+
+.OptimizedValuePair_BADGE__PAIR_YAPINK__2-4hE .OptimizedValuePair_desc__3Tn4o {
+	padding: 0 .6rem;
+	background-color: #fff;
+	border: .1rem solid #de2e5f;
+	border-radius: 0 .2rem .2rem 0;
+	color: #de2e5f
+}
+
+.OptimizedValuePair_BADGE__FILL_BLUE__2thtk {
+	padding: .3rem .7rem;
+	color: #fff;
+	background: #0152cc;
+	border-radius: .4rem
+}
+
+.OptimizedValuePair_BADGE__FILL_BLUE__2thtk .OptimizedValuePair_name__25rvC {
+	font-size: 1rem;
+	font-weight: 400
+}
+
+.OptimizedValuePair_BADGE__FILL_BLUE__2thtk .OptimizedValuePair_name__25rvC:after {
+	content: ": "
+}
+
+.OptimizedValuePair_BADGE__FILL_BLUE__2thtk .OptimizedValuePair_desc__3Tn4o {
+	font-size: 1rem;
+	font-weight: 700
+}
+
+.OptimizedValuePair_TEXT__NOTICE__axjdE {
+	display: -webkit-flex;
+	display: flex
+}
+
+.OptimizedValuePair_TEXT__NOTICE__axjdE .OptimizedValuePair_name__25rvC {
+	font-size: 1rem;
+	font-weight: 700;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	min-width: 3.6rem;
+	height: 1.5rem;
+	padding: .25rem .4rem .2rem;
+	background: #919191;
+	color: #fff;
+	border-radius: .4rem;
+	-webkit-justify-content: center;
+	justify-content: center
+}
+
+.OptimizedValuePair_TEXT__NOTICE__axjdE .OptimizedValuePair_desc__3Tn4o {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #919191;
+	margin-left: .4rem;
+	vertical-align: middle
+}
+
+.OptimizedValuePair_IMAGE__INSTANT_DISCOUNT__3SN_V {
+	background: url(//yaimg.yanolja.com/joy/sunny/static/images/badge-infinitecoupon-60.svg) no-repeat;
+	width: 6rem;
+	height: 6rem;
+	position: absolute;
+	top: 0;
+	left: .8rem
+}
+
+.OptimizedValuePair_IMAGE__SPECIAL_DISCOUNT__3y0sn {
+	background: linear-gradient(90deg, #8e4acc, #c54acc);
+	border-radius: .4rem 0 .4rem 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: .4rem .6rem;
+	min-width: 5.3rem;
+	height: 2.4rem;
+	position: absolute;
+	top: 0
+}
+
+.OptimizedValuePair_IMAGE__SPECIAL_DISCOUNT__3y0sn:after {
+	font-size: 1rem;
+	font-weight: 700;
+	content: "�밸퀎 �좎씤";
+	color: #fff
+}
+
+.OptimizedValuePair_container__1teWe {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+/*# sourceMappingURL=4f1741d3abeef37a8737.css.map*/
